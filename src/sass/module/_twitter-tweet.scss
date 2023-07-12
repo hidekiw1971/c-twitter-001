@@ -1,20 +1,20 @@
 @use "global" as *;
 
-.twitter-tweet {
-  height: rem(800);
-  overflow: scroll;
-  flex-basis: 20%;
-}
-
-element.style {
-  // width: 50%;
-}
-
 .twitter-wrapper {
-  @include mq(md) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    // 
-  }
+    width: 100%;
+    margin: 0 auto;
+    height: rem(1500);
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.twitter-tweet {
+    flex-basis: 100%;
+
+    @include mq(md) {
+        flex-basis: 20%;
+        // 
+    }
 }
